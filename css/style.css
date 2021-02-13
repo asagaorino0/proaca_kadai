@@ -1,4 +1,41 @@
 
+/* table {
+    width: 100%;
+} */
+  
+nav {
+    text-align: left;
+    font-size: 45%;
+    width: 100%;
+    height: min-content;
+    /* /* background-color:#00387e; */
+    background-position: center; 
+    /* padding: 0 15px; */
+    border: 1px solid #ccc;
+}
+nav {
+    /* position: sticky; */
+    top: 0;
+    color: #fff;
+    background: #333;
+    padding: 5px;
+}
+
+
+/* .nav th {
+	list-style: none;
+	float: left;} */
+
+a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px;
+}
+a:hover {
+	background: #666;
+}
+
+
 .container_a{
     width: 90%;
     background-position: center;
@@ -95,7 +132,6 @@
     padding-top: 5px;
     margin-bottom: 0px;
 }
-
 
 
 .container_b{
@@ -223,7 +259,7 @@
     width: 90%;
     height: 90%;
     text-align: center;
-    background: #7a7a7a ;
+    background: #666 ;
     border-radius:20px 20px 20px 20px;
     position: absolute;
     top: 0px;
@@ -390,11 +426,22 @@
     .star{
         display: none;
     }
+    nav{
+        display: none;
+    }
 
 }
 
 @media ( max-width : 680px ){
     /*スマホ用 */
+    nav {
+        display: none;
+        position: fixed;
+        width: 93%;
+        top: 0;
+        z-index: 1000;
+      }
+      
     .otoi{
         position: fixed;
         bottom: 15px;
