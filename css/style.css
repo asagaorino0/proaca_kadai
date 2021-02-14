@@ -1,7 +1,8 @@
 
-/* table {
-    width: 100%;
-} */
+* {
+    margin: 0px;
+    padding: 0px;
+}
   
 nav {
     text-align: left;
@@ -22,9 +23,6 @@ nav {
 }
 
 
-/* .nav th {
-	list-style: none;
-	float: left;} */
 
 a {
 	text-decoration: none;
@@ -58,6 +56,7 @@ a:hover {
     height: min-content;
     background-color:#00387e;
     background-position: center;
+    margin-bottom: 10px;
 }
 
 
@@ -67,17 +66,17 @@ a:hover {
     width: 100%;
     justify-content:space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.otoi {
+.otoi a{
     width: 120px;
-    /* height: 25px; */
+    height: 25px;
     background: #e50112 ;
     border-radius:35px ;
     color: white;
     /* text-align: center; */
-    /* vertical-align: center; */
+    vertical-align: center;
     vertical-align:middle;
     margin-right: 10px;
 }
@@ -348,11 +347,50 @@ a:hover {
     margin: 0;
 }
 
+.item_q {
+    padding: 5% 20% 5%;
+    font-size: 50%;
+    text-align: center;
+    background: white ;
+    border-radius:20px 20px 20px 20px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    }
+
+text{
+    background-color: blue;
+}
+
+.item_q input#name,#mail,textarea{
+    background-color: #efefef;
+    width: -webkit-fill-available;
+    border:none;
+    font-weight: bold;
+}
+
+.button{
+    width: 80px;
+    background: #e50112 ;
+    border-radius:35px ;
+    color: white;
+    vertical-align:middle;
+    border:none
+}
+
+
+
+
+
+
+
 @media ( min-width : 680px ){
 
     .container_a header{
         position: fixed;
-        width: 89.4%;
+        width: 90%;
         top: 0;
         right: 5%;
         left:5%;
@@ -373,12 +411,18 @@ a:hover {
     }
 
     .item_f{
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .item_h {
         display: flex;
         margin-bottom: 2%;
+    }
+    .item_h p{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
     }
     .item_h1 {
         width: 12%;
@@ -437,7 +481,7 @@ a:hover {
     nav {
         display: none;
         position: fixed;
-        width: 93%;
+        width: 100%;
         top: 0;
         z-index: 1000;
       }
@@ -496,6 +540,9 @@ a:hover {
         margin-left: 10%;
         margin-right: 10%;
     }
+
+
+
 
 
     .star {
