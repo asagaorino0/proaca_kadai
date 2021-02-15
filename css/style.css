@@ -4,34 +4,10 @@
     padding: 0px;
 }
   
-nav {
-    text-align: left;
-    font-size: 45%;
-    width: 100%;
-    height: min-content;
-    /* /* background-color:#00387e; */
-    background-position: center; 
-    /* padding: 0 15px; */
-    border: 1px solid #ccc;
-}
-nav {
-    /* position: sticky; */
-    top: 0;
-    color: #fff;
-    background: #333;
-    padding: 5px;
-}
 
 
 
-a {
-	text-decoration: none;
-	color: #fff;
-	padding: 5px;
-}
-a:hover {
-	background: #666;
-}
+
 
 
 .container_a{
@@ -399,6 +375,7 @@ text{
     }
     .container_a1 {
       display: flex;
+      color: black;
     }
     .container_b{
         display: flex;
@@ -470,27 +447,70 @@ text{
     .star{
         display: none;
     }
-    nav{
-        display: none;
+
+    .nav {
+        /* padding: 0 20px;
+        margin: 0 auto 60px; */
+        width: 60%;
     }
+    .clearfix{
+        justify-content: space-between;
+    } 
+    .nav a {
+        text-decoration: none;
+        color: black;
+        padding: 3%;
+    }
+
 
 }
 
 @media ( max-width : 680px ){
     /*スマホ用 */
-    nav {
-        display: none;
-        position: fixed;
-        width: 100%;
+
+    
+    .nav {
+        text-align: left;
+        font-size: 45%;
+        height: min-content;
+        background-position: center;
         top: 0;
+        color: black;
+        background: white;
+        padding: 5px;
+    }
+    .nav a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px;
+    }
+    a:hover {
+        background: #666;
+    }
+    
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        background: #333;
+        padding: 5px;
         z-index: 1000;
-      }
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    .clearfix:before, .clearfix:after {
+        content: "";
+        display: table;
+    }
       
     .otoi{
-        position: fixed;
-        bottom: 15px;
+        display: none;
+        /* bottom: 15px;
         right: 10px;
-        z-index:9999999;
+        z-index:9999999; */
     }
     .item_h {
         display: flex;
@@ -558,4 +578,26 @@ text{
         0%   { transform: rotateY(0deg); }
         100% { transform: rotateY(360deg); }
       }
+}
+
+
+#otoi_m {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+}
+#otoi_m a {
+    background: #e50112;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+#otoi_m a:hover {
+    text-decoration: none;
+    background: #999;
 }
